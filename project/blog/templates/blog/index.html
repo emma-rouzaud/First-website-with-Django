@@ -1,0 +1,34 @@
+{% extends "blog/layout.html" %}
+<html>
+    <head>
+        <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    </head>
+    <body>
+        {% block content %}
+        <span class="message">{{ message }}</span>{{ content }}
+        {% endblock %}
+        <div><a href="about">About</a></div>
+    </body>
+</html>
+<!--
+<html>
+    <head>
+        <title>Welcome to Django</title>
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html> -->
+<!-- 
+<html>
+    <head>
+        <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html> -->
